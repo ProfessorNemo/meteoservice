@@ -13,10 +13,7 @@
 export PATH="$PATH:/path:$PATH"
 * Сделайте файл исполняемым:
 chmod +x ./meteoservice
-* В командной строке введите
-```
-meteoservice.rb
-```
+* В командной строке введите: meteoservice.rb
 
 ## Пример:
 
