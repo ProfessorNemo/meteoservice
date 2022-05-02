@@ -11,7 +11,7 @@
 
 * В файл конфигурации оболочки "bashrc" допишите путь к директории с программой:
 echo 'export PATH="$PATH:/path:$PATH" >> ~/.bashrc
-затем
+* затем
 source ~/.bashrc
 * Сделайте файл исполняемым:
 chmod +x ./meteoservice.rb
