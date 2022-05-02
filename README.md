@@ -10,7 +10,9 @@
 ## Как запустить программу:
 
 * В файл конфигурации оболочки "bashrc" допишите путь к директории с программой:
-export PATH="$PATH:/path:$PATH"
+echo 'export PATH="$PATH:/path:$PATH" >> ~/.bashrc
+затем
+source ~/.bashrc
 * Сделайте файл исполняемым:
 chmod +x ./meteoservice.rb
 * В командной строке введите: meteoservice.rb
