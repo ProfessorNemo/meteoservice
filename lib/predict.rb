@@ -1,4 +1,5 @@
 require_relative 'constants'
+require 'date'
 
 class Predict
   def initialize(forecasts)

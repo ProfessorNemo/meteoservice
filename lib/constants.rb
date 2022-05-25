@@ -23,15 +23,3 @@ KEYS_DATA = %w[year month day hour weekday].freeze
 KEYS_PHENOMENA = %w[cloudiness precipitation rpower spower].freeze
 
 KEYS_LIMIT = %w[min max].freeze
-
-# Словарик городов, собранных с сайта метеосервиса
-CITIES = {
-  37 => 'Москва',
-  69 => 'Санкт-Петербург',
-  99 => 'Новосибирск',
-  105 => 'Калининград',
-  113 => 'Мурманск',
-  4 => 'Архангельск',
-  111 => 'Петропавловск-Камчатский',
-  199 => 'Краснодар'
-}.invert.freeze
