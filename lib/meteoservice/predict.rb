@@ -33,7 +33,7 @@ module Meteoservice
                  "Сегодня в #{day_week}, #{times_day}\n" unless day_week == "вторник"
                else
                  "#{DateTime.new(@date[0], @date[1], @date[2], @date[3], 0, 0)
-          .strftime('%F')} в #{day_week} #{times_day}\n"
+          .strftime('%F')} в #{day_week}, #{times_day}\n"
                end
 
       result << "Температура: #{temperature_range_string} °С\n" \
