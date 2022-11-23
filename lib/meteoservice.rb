@@ -4,10 +4,13 @@ require_relative 'main'
 
 # Main Meteoservice module
 module Meteoservice
-  def self.result
-    doc = Meteoservice::TownsData.process
+  def self.result(city_index = nil)
+    doc = if city_index
+            Meteoservice::TownsData.auto_process(city_index.to_i)
+          else
+            Meteoservice::TownsData.process
+          end
 
-    # очистить экран
     puts "\e[H\e[2J"
 
     weather = Meteoservice::ReadData.from_array(doc[0]).to_a
@@ -20,5 +23,3 @@ module Meteoservice
     end
   end
 end
-
-Meteoservice.result
