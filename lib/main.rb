@@ -1,0 +1,17 @@
+# frozen_string_literal: true
+
+require 'date'
+require 'uri'
+require 'json'
+require 'byebug'
+require 'faraday/encode_xml'
+require 'faraday_middleware'
+require 'multi_xml'
+require_relative 'meteoservice/constants'
+require_relative 'meteoservice/nested_hash_value'
+require_relative 'meteoservice/parser_xml'
+require_relative 'meteoservice/meteo'
+require_relative 'meteoservice/towns_data'
+require_relative 'meteoservice/read_data'
+require_relative 'meteoservice/predict'
+require_relative 'meteoservice/error'

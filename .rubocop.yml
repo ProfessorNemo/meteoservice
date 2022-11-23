@@ -1,0 +1,54 @@
+require:
+  - rubocop-performance
+  - rubocop-rspec
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.0.3
+
+Style/StringLiteralsInInterpolation:
+  Enabled: false
+
+Layout/LineLength:
+  Max: 150
+  Exclude:
+    - spec/**/*.rb
+
+Metrics/BlockLength:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 150
+
+RSpec/MultipleExpectations:
+  Max: 10
+
+RSpec/ExampleLength:
+  Max: 100
+
+RSpec/FilePath:
+  Enabled: false
+
+RSpec/NoExpectationExample:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+LineEndStringConcatenationIndentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/StringLiterals:
+  Enabled: false

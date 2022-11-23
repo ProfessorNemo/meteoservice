@@ -1,0 +1,84 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://xml.meteoservice.ru/export/gismeteo/point/69.xml
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.10.2
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 22 Nov 2022 23:06:21 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      vary:
+      - Accept-Encoding
+      expires:
+      - Tue, 22 Nov 2022 23:47:27 GMT
+      cache-control:
+      - max-age=3600
+      meteo-cache-status:
+      - HIT
+      meteo-rule:
+      - main
+      x-content-type-options:
+      - nosniff
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        <?xml version="1.0" encoding="utf-8"?>
+        <MMWEATHER>
+            <REPORT type="frc3">
+                <TOWN index="69" sname="%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3" latitude="60" longitude="30">
+                    <FORECAST day="23" month="11" year="2022" hour="03" tod="0" predict="0" weekday="4">
+                        <PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+                        <PRESSURE max="761" min="761"/>
+                        <TEMPERATURE max="-2" min="-3"/>
+                        <WIND min="3" max="4" direction="2"/>
+                        <RELWET max="66" min="62"/>
+                        <HEAT min="-8" max="-8"/>
+                    </FORECAST>
+                    <FORECAST day="23" month="11" year="2022" hour="09" tod="1" predict="0" weekday="4">
+                        <PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+                        <PRESSURE max="762" min="761"/>
+                        <TEMPERATURE max="-2" min="-2"/>
+                        <WIND min="4" max="4" direction="2"/>
+                        <RELWET max="66" min="65"/>
+                        <HEAT min="-9" max="-9"/>
+                    </FORECAST>
+                    <FORECAST day="23" month="11" year="2022" hour="15" tod="2" predict="0" weekday="4">
+                        <PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+                        <PRESSURE max="762" min="762"/>
+                        <TEMPERATURE max="-2" min="-2"/>
+                        <WIND min="4" max="4" direction="3"/>
+                        <RELWET max="65" min="64"/>
+                        <HEAT min="-8" max="-8"/>
+                    </FORECAST>
+                    <FORECAST day="23" month="11" year="2022" hour="21" tod="3" predict="0" weekday="4">
+                        <PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+                        <PRESSURE max="764" min="763"/>
+                        <TEMPERATURE max="-2" min="-3"/>
+                        <WIND min="3" max="4" direction="3"/>
+                        <RELWET max="65" min="63"/>
+                        <HEAT min="-8" max="-8"/>
+                    </FORECAST>
+                </TOWN>
+            </REPORT>
+        </MMWEATHER>
+  recorded_at: Tue, 22 Nov 2022 23:06:21 GMT
+recorded_with: VCR 6.1.0
