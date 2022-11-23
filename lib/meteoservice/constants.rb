@@ -19,7 +19,7 @@ module Meteoservice
                         юго-западный западный северо-западный].freeze
 
     # Дни недели
-    DAYS_OF_WEEK = %w[понедельник вторник среда четверг пятница суббота воскресенье].freeze
+    DAYS_OF_WEEK = %w[понедельник вторник среду четверг пятницу субботу воскресенье].freeze
 
     # аттрибуты xml
     KEYS_DATA = %w[year month day hour weekday].freeze

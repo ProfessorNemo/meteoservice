@@ -29,7 +29,8 @@ module Meteoservice
       times_day = 'вечером' if Range.new(*[18, 23].map(&:to_i)).include? @date[3]
 
       result = if today?
-                 "Сегодня в #{day_week} #{times_day}\n"
+                 "Сегодня во #{day_week}, #{times_day}\n" if day_week == "вторник"
+                 "Сегодня в #{day_week}, #{times_day}\n" unless day_week == "вторник"
                else
                  "#{DateTime.new(@date[0], @date[1], @date[2], @date[3], 0, 0)
           .strftime('%F')} в #{day_week} #{times_day}\n"
@@ -59,7 +60,7 @@ module Meteoservice
     end
 
     def today?
-      @date == Date.today
+      Date.today.strftime("%d") == @date[2].to_s
     end
   end
 end
