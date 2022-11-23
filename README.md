@@ -1,6 +1,17 @@
 # `meteoservice`
 
-###### Язык написания - Ruby 3.0.3
+
+[![Gem Version](https://img.shields.io/gem/dt/meteoservice.svg)][gem]
+[![Gem](https://img.shields.io/gem/v/meteoservice)][gem]
+[![Build Status](https://github.com/ProfessorNemo/meteoservice/actions/workflows/ci.yml/badge.svg)][actions]
+[![Test Coverage](https://codecov.io/gh/ProfessorNemo/meteoservice/graph/badge.svg)](https://codecov.io/gh/ProfessorNemo/meteoservice)
+[![Depfu](https://img.shields.io/depfu/ProfessorNemo/meteoservice?style=flat-square)](https://depfu.com/repos/github/ProfessorNemo/meteoservice)
+
+[gem]: https://rubygems.org/gems/meteoservice
+[gem]: https://rubygems.org/gems/meteoservice
+[actions]: https://github.com/ProfessorNemo/meteoservice/actions
+[coveralls]: https://coveralls.io/r/ProfessorNemo/meteoservice
+###### Язык написания - Ruby
 
 ## Описание:
 > Программа показывает текущую погоду, используя свежие данные в XML-структуре от.
