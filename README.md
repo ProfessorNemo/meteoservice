@@ -51,7 +51,7 @@ Meteoservice.result
 
 Meteoservice.result('113')
 ```
-(Смотрите пример: [`example`](https://github.com/ProfessorNemo/meteoservice/tree/master/examples))
+> Смотрите пример: [`example`](https://github.com/ProfessorNemo/meteoservice/tree/master/examples)
 
 ## Пример (вариант с вводом 'id' в консоли):
 
