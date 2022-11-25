@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    meteoservice (0.2.1)
+    meteoservice (0.2.3)
       faraday-encode_xml
       faraday_middleware
       multi_xml (~> 0.6)

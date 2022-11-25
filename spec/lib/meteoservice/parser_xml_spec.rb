@@ -93,7 +93,7 @@ RSpec.describe Meteoservice::ParserXml do
              )
              .to_return(status: 200, body: body, headers: {})
 
-      #  strange behavior
+      # strange behavior
       expect(stub).not_to have_been_requested
     end
   end

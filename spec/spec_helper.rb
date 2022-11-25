@@ -7,6 +7,7 @@ require 'webmock/rspec'
 SimpleCov.start do
   add_filter 'spec/'
   add_filter '.github/'
+  add_filter 'examples/'
 end
 
 # Если тесты работают на "Continuous Integration", то данные затем отрпавить на сервис "Codecov"

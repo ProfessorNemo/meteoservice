@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
 RSpec.describe Meteoservice::TownsData do
-  let(:full_path) { 'https://xml.meteoservice.ru/export/gismeteo/point/37.xml' }
-  let(:path) { '/export/gismeteo/point/37.xml' }
   let(:service_stub) { class_double described_class }
 
   let(:result) do
