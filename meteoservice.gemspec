@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.homepage = 'https://github.com/ProfessorNemo/meteoservice'
   spec.license = 'MIT'
   spec.platform = Gem::Platform::RUBY
-  spec.required_ruby_version = '>= 3.0.2'
+  spec.required_ruby_version = '>= 3.0.3'
   spec.metadata['homepage_uri'] = spec.homepage
   spec.metadata['source_code_uri'] = spec.homepage
 
