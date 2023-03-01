@@ -11,7 +11,7 @@ group :test do
   gem 'byebug'
   gem 'codecov', '~> 0.4'
   gem 'rspec', '~> 3.1'
-  gem 'rubocop', '~> 1.3'
+  gem 'rubocop', '~> 1.47'
   gem 'rubocop-performance', '~> 1.1'
   gem 'rubocop-rspec', '~> 2.1'
   gem 'simplecov', '~> 0.21'
